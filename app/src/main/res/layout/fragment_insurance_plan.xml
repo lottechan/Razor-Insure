@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.razerinsure.ui.home.InsurancePlanFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_alignStart="@id/dinosaur_speech"
+        android:text="@string/title_question"
+        android:textColor="@color/insurance_plans_text_color"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/dinosaur_picture"
+        android:layout_width="@dimen/dinosaur_size"
+        android:layout_height="@dimen/dinosaur_size"
+        android:layout_below="@id/title"
+        android:layout_marginStart="-20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-20dp"
+        android:scaleX="-1"
+        android:src="@mipmap/ic_trex_logo" />
+
+    <TextView
+        android:id="@+id/dinosaur_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dinosaur_picture"
+        android:layout_alignBottom="@id/dinosaur_picture"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/dinosaur_speech_margin"
+        android:layout_toStartOf="@id/dinosaur_picture"
+        android:background="@drawable/card_rounded_background"
+        android:gravity="center"
+        android:padding="@dimen/default_margin"
+        android:text="@string/dinosaur_text_insurance_plan"
+        android:textSize="@dimen/text_medium" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/explanation_card_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/dinosaur_speech"
+        android:layout_alignStart="@id/dinosaur_speech"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginEnd="@dimen/dinosaur_speech_margin"
+        android:padding="@dimen/default_margin"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explanation_card_list"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_alignStart="@id/dinosaur_speech"
+        android:text="@string/default_statistics"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_huge"/>
+
+    <TextView
+        android:id="@+id/statistics_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/statistic"
+        android:layout_alignTop="@id/statistic"
+        android:layout_alignBottom="@id/statistic"
+        android:gravity="center"
+
+        android:text="@string/default_statistics_rest"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statistic"
+        android:layout_alignStart="@id/dinosaur_speech"
+        android:layout_marginEnd="@dimen/dinosaur_speech_margin"
+        android:padding="@dimen/default_margin"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/voucher_view"
+        android:id="@+id/voucher_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left" />
+    <include
+        layout="@layout/voucher_view"
+        android:id="@+id/voucher_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/voucher_view_1"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left" />
+    <include
+        layout="@layout/voucher_view"
+        android:id="@+id/voucher_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/voucher_view_2"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left" />
+
+    <ImageView
+        android:layout_width="@dimen/default_coverage_option_width"
+        android:layout_height="@dimen/default_coverage_option_height"
+        android:id="@+id/other_coverage_options_picture"
+
+        android:layout_toRightOf="@id/voucher_view_3"
+        android:layout_below="@+id/coverage_header"
+        android:background="@drawable/ic_more_options_black"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left"
+        android:contentDescription="@string/coverage_option_description" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razerinsure.ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcome_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:text="@string/welcome_back_text"
+                android:textColor="#09CE26"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_below="@+id/welcome_back"
+                android:text="@string/title_policy_overview"
+                android:textColor="@color/insurance_plans_text_color"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/my_policies_list"
+                layout="@layout/account_overview_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_alignEnd="@id/insurance_plan_group_view"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin" />
+
+            <TextView
+                android:id="@+id/get_insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_policies_list"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:text="@string/get_insurance"
+                android:textColor="@color/insurance_plans_text_color"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/insurance_plan_group_view"
+                layout="@layout/insurance_plan_group_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/get_insurance"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/dinosaur_picture"
+                android:layout_width="@dimen/dinosaur_size"
+                android:layout_height="@dimen/dinosaur_size"
+                android:layout_below="@id/insurance_plan_group_view"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_marginStart="-20dp"
+                android:layout_marginEnd="-20dp"
+                android:src="@mipmap/ic_trex_logo" />
+
+            <TextView
+                android:id="@+id/dinosaur_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dinosaur_picture"
+                android:layout_alignBottom="@id/dinosaur_picture"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/dinosaur_speech_margin"
+                android:layout_toEndOf="@id/dinosaur_picture"
+                android:background="@drawable/card_rounded_background"
+                android:gravity="center"
+                android:padding="@dimen/default_margin"
+                android:text="@string/dinosaur_text"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/save_a_copy_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dinosaur_picture"
+                android:layout_alignStart="@id/insurance_plan_group_view"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:text="@string/save_a_copy"
+                android:textColor="@color/insurance_plans_text_color"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/contact_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/save_a_copy_title" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

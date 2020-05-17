@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/reward_profile_face"
+
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/ic_reward_profile_picture_foreground"
+        android:contentDescription="@string/saved_card_description" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/reward_profile_level"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="55dp"
+        android:text="@string/reward_profile_level_text"
+        android:layout_below="@+id/travel_plan_introduction"
+        android:contentDescription="@string/saved_card_description"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/reward_progress_bar"
+
+        android:background="@drawable/ic_reward_progress_bar"
+        android:layout_below="@+id/reward_profile_face"
+        android:layout_marginTop="-140dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/saved_card_description" />
+
+    <TextView
+        android:id="@+id/exp_bar_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/reward_progress_bar"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left"
+        android:layout_marginTop="-20sp"
+        android:layout_centerInParent="true"
+        android:text="@string/exp_bar_header_text"
+        android:textColor="@color/insurance_text_color"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/my_badges_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/reward_progress_bar"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left"
+        android:text="@string/my_badges_header_text"
+        android:textColor="@color/insurance_text_color"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <include layout="@layout/reward_badge_group_view"
+        android:id="@+id/my_badges_group_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_badges_header"
+        android:layout_marginTop="@dimen/text_medium"/>
+
+    <TextView
+        android:id="@+id/my_vouchers_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/my_badges_group_view"
+        android:layout_marginLeft="@dimen/coverage_header_margin_left"
+        android:layout_marginTop="@dimen/text_big"
+        android:text="@string/my_vouchers_header_texts"
+        android:textColor="@color/insurance_text_color"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <include layout="@layout/voucher_group_view"
+        android:id="@+id/voucher_list_group_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_vouchers_header"
+        android:layout_marginTop="@dimen/text_medium"/>
+     </RelativeLayout>
+ </ScrollView>
+</RelativeLayout>

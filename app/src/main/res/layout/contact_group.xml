@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="@dimen/add_button_size"
+        android:layout_height="@dimen/add_button_size"
+        android:layout_centerVertical="true"
+        android:text="@string/add"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_big"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/default_margin"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/add_button"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

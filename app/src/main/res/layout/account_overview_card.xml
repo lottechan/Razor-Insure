@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_rounded_background"
+    android:padding="@dimen/default_margin">
+
+    <TextView
+        android:id="@+id/amount_of_policy_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/default_number_of_current_policies_1"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/current_policy_shown_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/amount_of_policy_1"
+        android:layout_margin="@dimen/default_margin"
+        android:textSize="@dimen/text_big"
+        android:text="@string/current_policy_shown_1"
+        />
+
+    <TextView
+        android:id="@+id/amount_of_policy_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_below="@id/amount_of_policy_1"
+        android:text="@string/default_number_of_current_policies_2"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/current_policy_shown_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/amount_of_policy_1"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_below="@id/current_policy_shown_1"
+        android:textSize="@dimen/text_big"
+        android:text="@string/current_policy_shown_2"
+        />
+    <TextView
+        android:id="@+id/more_current_policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount_of_policy_2"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/current_policies"
+        android:textSize="@dimen/text_medium"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/payment_bottom_view_margin"
+    android:padding="@dimen/payment_bottom_view_margin"
+    android:clipToPadding="false"
+    android:background="@drawable/rounded_background"
+    android:elevation="16dp">
+
+
+    <TextView
+        android:id="@+id/plan_selected_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/title_plan_selected_header"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_plan_selected_header"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/plan_selected_top_margin"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/plan_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/title_plan_selected"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_plan_selected"
+        android:layout_below="@id/plan_selected_header"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/amount_to_be_deducted_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/title_amount_to_be_deducted_header"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_amount_to_be_deducted_header"
+        android:layout_below="@id/plan_selected"
+        android:layout_marginTop="@dimen/anount_to_be_deducted_top_margin"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/amount_to_be_deducted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/title_plan_selected"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_plan_selected"
+        android:layout_below="@id/amount_to_be_deducted_header"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/pay_now_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/pay_now_button_text"
+        android:textSize="@dimen/text_medium"
+        android:layout_below="@+id/amount_to_be_deducted"
+        android:layout_marginTop="@dimen/pay_now_button_top_margin"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Ask your family network to pay for you"
+        android:textSize="@dimen/text_medium"
+        android:layout_below="@+id/pay_now_button"
+        android:layout_marginTop="@dimen/pay_now_button_top_margin"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

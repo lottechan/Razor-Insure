@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include
+        layout="@layout/insurance_card_view"
+        android:layout_margin="@dimen/default_margin"
+        android:id="@+id/insurance_first"
+        android:layout_width="@dimen/default_cardview_width"
+        android:layout_height="@dimen/default_cardview_height"
+
+        android:layout_alignParentStart="true" />
+
+    <include
+        layout="@layout/insurance_card_view"
+        android:id="@+id/insurance_second"
+        android:layout_margin="@dimen/default_margin"
+
+        android:layout_toEndOf="@id/insurance_first"
+        android:layout_width="@dimen/default_cardview_width"
+        android:layout_height="@dimen/default_cardview_height" />
+
+    <include
+        layout="@layout/insurance_card_view"
+        android:id="@+id/insurance_third"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_toEndOf="@id/insurance_second"
+        android:layout_width="@dimen/default_cardview_width"
+        android:layout_height="@dimen/default_cardview_height"
+
+        />
+
+    <include
+        layout="@layout/insurance_card_view"
+        android:id="@+id/insurance_fourth"
+        android:layout_margin="@dimen/default_margin"
+
+        android:layout_toEndOf="@id/insurance_third"
+        android:layout_width="@dimen/default_cardview_width"
+        android:layout_height="@dimen/default_cardview_height"
+
+        />
+
+</RelativeLayout>

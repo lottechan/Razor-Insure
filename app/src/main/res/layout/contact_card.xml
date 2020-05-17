@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/card_rounded_background"
+    android:layout_marginStart="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/contact_icon"
+        android:layout_width="@dimen/contact_card_size"
+        android:layout_height="@dimen/contact_card_size"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

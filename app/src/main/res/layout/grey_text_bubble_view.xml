@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_rounded_background"
+    android:padding="@dimen/default_margin">
+
+    <TextView
+        android:id="@+id/text_bubble_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text="Claiming is easy with Razer Insure! Let me show you the way. First, choose a category that ypu wish to claim from."
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

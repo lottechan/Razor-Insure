@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/credit_card_picture"
+                android:layout_width="@dimen/default_payment_card_width"
+                android:layout_height="@dimen/default_payment_card_height"
+
+
+                android:layout_below="@id/saved_payment_cards_title"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/saved_card_description"
+                android:src="@drawable/ic_payment_card_black" />
+
+            <TextView
+                android:id="@+id/saved_payment_cards_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/saved_card_left_margin"
+                android:layout_marginTop="@dimen/saved_card_top_margin"
+                android:layout_marginBottom="@dimen/saved_card_top_margin"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:text="@string/title_saved_cards"
+                android:textColor="@color/insurance_text_color"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/bottom_page"
+
+                layout="@layout/payment_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/credit_card_picture"
+                android:layout_marginTop="@dimen/default_margin" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+    <dimen name="text_small">8sp</dimen>
+    <dimen name="default_cardview_height">100dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="default_cardview_width">75dp</dimen>
+    <dimen name="default_payment_card_width">400dp</dimen>
+    <dimen name="default_payment_card_height">250dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="plan_selected_top_margin">50dp</dimen>
+    <dimen name="saved_card_top_margin">20sp</dimen>
+    <dimen name="saved_card_left_margin">20sp</dimen>
+    <dimen name="text_plan_selected">10sp</dimen>
+    <dimen name="text_plan_selected_header">20sp</dimen>
+    <dimen name="text_amount_to_be_deducted_header">20sp</dimen>
+    <dimen name="anount_to_be_deducted_top_margin">30sp</dimen>
+    <dimen name="default_selected_plan_width">500dp</dimen>
+    <dimen name="default_selected_plan_height">400dp</dimen>
+    <dimen name="coverage_header_margin_left">25sp</dimen>
+    <dimen name="default_coverage_option_width">70dp</dimen>
+    <dimen name="default_coverage_option_height">70dp</dimen>
+    <dimen name="coverage_option_description_margin_left">4sp</dimen>
+    <dimen name="terms_and_conditions_top_margin">10sp</dimen>
+    <dimen name="terms_and_conditions_body_margin_right">30sp</dimen>
+    <dimen name="terms_and_conditions_body_margin_left">27sp</dimen>
+    <dimen name="terms_and_conditions_scroll_height">100dp</dimen>
+    <dimen name="payment_bottom_view_height">150sp</dimen>
+    <dimen name="pay_now_button_top_margin">20dp</dimen>
+    <dimen name="payment_bottom_view_margin">15dp</dimen>
+    <dimen name="add_button_size">50dp</dimen>
+    <dimen name="dinosaur_size">150dp</dimen>
+    <dimen name="dinosaur_speech_margin">20dp</dimen>
+    <dimen name="text_huge">50sp</dimen>
+    <dimen name="contact_card_size">120dp</dimen>
+    <dimen name="shrink_margin_between_card">-100dp</dimen>
+    <dimen name="drawer_width">240dp</dimen>
+</resources>
